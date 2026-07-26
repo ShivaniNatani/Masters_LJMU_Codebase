@@ -108,19 +108,19 @@
     "sample_id": 2,
     "predicted_entities": [
       {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 3
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
       },
       {
-        "entity": "effusion",
+        "entity": "edema",
         "label": "OBS-DP",
-        "index": 4
+        "index": 13
       },
       {
-        "entity": "opacity",
+        "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 10
+        "index": 23
       }
     ],
     "reference_entities": [
@@ -155,7 +155,7 @@
         "index": 25
       }
     ],
-    "entity_overlap_f1": 0.2857
+    "entity_overlap_f1": 0.3333
   },
   {
     "sample_id": 3,
@@ -203,9 +203,14 @@
         "index": 13
       },
       {
-        "entity": "atelectasis",
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 19
+      },
+      {
+        "entity": "effusion",
         "label": "OBS-DP",
-        "index": 23
+        "index": 20
       }
     ],
     "reference_entities": [],
@@ -276,11 +281,6 @@
         "entity": "edema",
         "label": "OBS-DP",
         "index": 13
-      },
-      {
-        "entity": "atelectasis",
-        "label": "OBS-DP",
-        "index": 23
       }
     ],
     "reference_entities": [
@@ -364,34 +364,14 @@
     "sample_id": 8,
     "predicted_entities": [
       {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 3
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 4
-      },
-      {
         "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 10
+        "index": 9
       },
       {
         "entity": "edema",
         "label": "OBS-DP",
-        "index": 14
-      },
-      {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 18
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 19
+        "index": 13
       },
       {
         "entity": "atelectasis",
@@ -441,7 +421,7 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 0.6667
+    "entity_overlap_f1": 0.2857
   },
   {
     "sample_id": 9,
@@ -457,19 +437,19 @@
         "index": 4
       },
       {
-        "entity": "opacity",
+        "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 10
+        "index": 11
       },
       {
         "entity": "edema",
         "label": "OBS-DP",
-        "index": 14
+        "index": 15
       },
       {
-        "entity": "atelectasis",
+        "entity": "edema",
         "label": "OBS-DP",
-        "index": 24
+        "index": 22
       }
     ],
     "reference_entities": [],
@@ -489,29 +469,19 @@
         "index": 4
       },
       {
-        "entity": "opacity",
+        "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 10
+        "index": 11
       },
       {
-        "entity": "pneumonia",
+        "entity": "edema",
         "label": "OBS-DP",
-        "index": 16
-      },
-      {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 19
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 20
+        "index": 15
       },
       {
         "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 24
+        "index": 25
       }
     ],
     "reference_entities": [
@@ -531,7 +501,7 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 0.2857
+    "entity_overlap_f1": 0.6667
   },
   {
     "sample_id": 11,
@@ -674,97 +644,7 @@
     "sample_id": 14,
     "predicted_entities": [
       {
-        "entity": "atelectasis",
-        "label": "OBS-DP",
-        "index": 9
-      },
-      {
-        "entity": "edema",
-        "label": "OBS-DP",
-        "index": 13
-      },
-      {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 19
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 20
-      }
-    ],
-    "reference_entities": [
-      {
-        "entity": "lung",
-        "label": "ANAT-DP",
-        "index": 2
-      },
-      {
         "entity": "opacity",
-        "label": "OBS-DP",
-        "index": 5
-      },
-      {
-        "entity": "pneumonia",
-        "label": "OBS-DP",
-        "index": 13
-      },
-      {
-        "entity": "atelectasis",
-        "label": "OBS-DP",
-        "index": 15
-      },
-      {
-        "entity": "opacity",
-        "label": "OBS-DP",
-        "index": 22
-      },
-      {
-        "entity": "pneumonia",
-        "label": "OBS-DP",
-        "index": 25
-      }
-    ],
-    "entity_overlap_f1": 0.25
-  },
-  {
-    "sample_id": 15,
-    "predicted_entities": [],
-    "reference_entities": [
-      {
-        "entity": "cardiac",
-        "label": "ANAT-DP",
-        "index": 2
-      },
-      {
-        "entity": "normal",
-        "label": "OBS-DP",
-        "index": 6
-      },
-      {
-        "entity": "clear",
-        "label": "OBS-DP",
-        "index": 10
-      },
-      {
-        "entity": "pleural",
-        "label": "ANAT-DP",
-        "index": 16
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 17
-      }
-    ],
-    "entity_overlap_f1": 0.0
-  },
-  {
-    "sample_id": 16,
-    "predicted_entities": [
-      {
-        "entity": "atelectasis",
         "label": "OBS-DP",
         "index": 9
       },
@@ -811,11 +691,123 @@
         "index": 25
       }
     ],
+    "entity_overlap_f1": 0.5714
+  },
+  {
+    "sample_id": 15,
+    "predicted_entities": [
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 13
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 23
+      }
+    ],
+    "reference_entities": [
+      {
+        "entity": "cardiac",
+        "label": "ANAT-DP",
+        "index": 2
+      },
+      {
+        "entity": "normal",
+        "label": "OBS-DP",
+        "index": 6
+      },
+      {
+        "entity": "clear",
+        "label": "OBS-DP",
+        "index": 10
+      },
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 16
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 17
+      }
+    ],
+    "entity_overlap_f1": 0.0
+  },
+  {
+    "sample_id": 16,
+    "predicted_entities": [
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 13
+      }
+    ],
+    "reference_entities": [
+      {
+        "entity": "lung",
+        "label": "ANAT-DP",
+        "index": 2
+      },
+      {
+        "entity": "opacity",
+        "label": "OBS-DP",
+        "index": 5
+      },
+      {
+        "entity": "pneumonia",
+        "label": "OBS-DP",
+        "index": 13
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 15
+      },
+      {
+        "entity": "opacity",
+        "label": "OBS-DP",
+        "index": 22
+      },
+      {
+        "entity": "pneumonia",
+        "label": "OBS-DP",
+        "index": 25
+      }
+    ],
     "entity_overlap_f1": 0.3333
   },
   {
     "sample_id": 17,
-    "predicted_entities": [],
+    "predicted_entities": [
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 13
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 23
+      }
+    ],
     "reference_entities": [
       {
         "entity": "cardiac",
@@ -928,9 +920,34 @@
     "sample_id": 20,
     "predicted_entities": [
       {
-        "entity": "normal",
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 3
+      },
+      {
+        "entity": "effusion",
         "label": "OBS-DP",
         "index": 4
+      },
+      {
+        "entity": "opacity",
+        "label": "OBS-DP",
+        "index": 11
+      },
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 18
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 19
+      },
+      {
+        "entity": "pneumonia",
+        "label": "OBS-DP",
+        "index": 22
       }
     ],
     "reference_entities": [
@@ -965,11 +982,42 @@
         "index": 25
       }
     ],
-    "entity_overlap_f1": 0.0
+    "entity_overlap_f1": 0.5
   },
   {
     "sample_id": 21,
-    "predicted_entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 3
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 4
+      },
+      {
+        "entity": "opacity",
+        "label": "OBS-DP",
+        "index": 10
+      },
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 17
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 18
+      },
+      {
+        "entity": "pneumonia",
+        "label": "OBS-DP",
+        "index": 21
+      }
+    ],
     "reference_entities": [
       {
         "entity": "cardiac",
@@ -997,11 +1045,42 @@
         "index": 17
       }
     ],
-    "entity_overlap_f1": 0.0
+    "entity_overlap_f1": 0.4444
   },
   {
     "sample_id": 22,
-    "predicted_entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 3
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 4
+      },
+      {
+        "entity": "opacity",
+        "label": "OBS-DP",
+        "index": 10
+      },
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 19
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 20
+      },
+      {
+        "entity": "pneumonia",
+        "label": "OBS-DP",
+        "index": 23
+      }
+    ],
     "reference_entities": [],
     "entity_overlap_f1": 0.0
   },
@@ -1046,24 +1125,39 @@
     "sample_id": 24,
     "predicted_entities": [
       {
-        "entity": "lung",
+        "entity": "pleural",
         "label": "ANAT-DP",
-        "index": 2
+        "index": 3
       },
       {
-        "entity": "opacity",
+        "entity": "effusion",
         "label": "OBS-DP",
-        "index": 5
-      },
-      {
-        "entity": "pneumonia",
-        "label": "OBS-DP",
-        "index": 13
+        "index": 4
       },
       {
         "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 15
+        "index": 10
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 14
+      },
+      {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 20
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 21
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 25
       }
     ],
     "reference_entities": [
@@ -1093,50 +1187,45 @@
         "index": 17
       }
     ],
-    "entity_overlap_f1": 0.0
+    "entity_overlap_f1": 0.4444
   },
   {
     "sample_id": 25,
     "predicted_entities": [
       {
-        "entity": "pleural",
+        "entity": "lung",
         "label": "ANAT-DP",
-        "index": 3
-      },
-      {
-        "entity": "effusion",
-        "label": "OBS-DP",
-        "index": 4
+        "index": 2
       },
       {
         "entity": "opacity",
         "label": "OBS-DP",
-        "index": 10
+        "index": 5
       },
       {
-        "entity": "atelectasis",
+        "entity": "pneumonia",
         "label": "OBS-DP",
         "index": 13
       },
       {
-        "entity": "pneumonia",
+        "entity": "atelectasis",
         "label": "OBS-DP",
         "index": 15
       },
       {
         "entity": "pleural",
         "label": "ANAT-DP",
-        "index": 18
+        "index": 20
       },
       {
         "entity": "effusion",
         "label": "OBS-DP",
-        "index": 19
+        "index": 21
       },
       {
-        "entity": "atelectasis",
+        "entity": "pneumonia",
         "label": "OBS-DP",
-        "index": 23
+        "index": 24
       }
     ],
     "reference_entities": [
@@ -1156,11 +1245,27 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 0.2857
+    "entity_overlap_f1": 0.25
   },
   {
     "sample_id": 26,
-    "predicted_entities": [],
+    "predicted_entities": [
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 13
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 23
+      }
+    ],
     "reference_entities": [
       {
         "entity": "cardiac",
@@ -1192,23 +1297,7 @@
   },
   {
     "sample_id": 27,
-    "predicted_entities": [
-      {
-        "entity": "atelectasis",
-        "label": "OBS-DP",
-        "index": 9
-      },
-      {
-        "entity": "edema",
-        "label": "OBS-DP",
-        "index": 13
-      },
-      {
-        "entity": "atelectasis",
-        "label": "OBS-DP",
-        "index": 23
-      }
-    ],
+    "predicted_entities": [],
     "reference_entities": [
       {
         "entity": "atelectasis",
@@ -1226,7 +1315,7 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 1.0
+    "entity_overlap_f1": 0.0
   },
   {
     "sample_id": 28,
@@ -1274,19 +1363,19 @@
         "index": 4
       },
       {
-        "entity": "atelectasis",
+        "entity": "opacity",
         "label": "OBS-DP",
-        "index": 11
+        "index": 10
       },
       {
         "entity": "edema",
         "label": "OBS-DP",
-        "index": 15
+        "index": 14
       },
       {
         "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 25
+        "index": 24
       }
     ],
     "reference_entities": [
@@ -1306,11 +1395,27 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 0.6667
+    "entity_overlap_f1": 0.5714
   },
   {
     "sample_id": 30,
-    "predicted_entities": [],
+    "predicted_entities": [
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 9
+      },
+      {
+        "entity": "edema",
+        "label": "OBS-DP",
+        "index": 13
+      },
+      {
+        "entity": "atelectasis",
+        "label": "OBS-DP",
+        "index": 23
+      }
+    ],
     "reference_entities": [
       {
         "entity": "pleural",
@@ -1353,7 +1458,7 @@
         "index": 23
       }
     ],
-    "entity_overlap_f1": 0.0
+    "entity_overlap_f1": 0.2857
   },
   {
     "sample_id": 31,
@@ -1369,7 +1474,7 @@
         "index": 4
       },
       {
-        "entity": "atelectasis",
+        "entity": "opacity",
         "label": "OBS-DP",
         "index": 11
       },
@@ -1379,9 +1484,19 @@
         "index": 15
       },
       {
+        "entity": "pleural",
+        "label": "ANAT-DP",
+        "index": 21
+      },
+      {
+        "entity": "effusion",
+        "label": "OBS-DP",
+        "index": 22
+      },
+      {
         "entity": "atelectasis",
         "label": "OBS-DP",
-        "index": 25
+        "index": 26
       }
     ],
     "reference_entities": [],

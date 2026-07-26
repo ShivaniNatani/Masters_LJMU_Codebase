@@ -47,9 +47,10 @@ The project implements a **Retrieval-Augmented Vision-Language Model (RAG VLM)**
   - Archived artifacts: `checkpoints/baseline_best_loss.pt`, `checkpoints/baseline_best_bleu4.pt`, `results/baseline_metrics.json`, `docs/PHASE2_BASELINE_REPORT.md`.
 - **Phase 3: Retrieval-Augmented Generation VLM** (`COMPLETED & FROZEN`)
   - FAISS `IndexFlatIP` 512-dim visual embedding retriever built and saved (`retrieval/index_store/faiss.index`).
-  - 3-Way Controlled Framework benchmarked: Baseline (BLEU-4: `0.3606`, CheXbert F1: `0.4810`), Random Control (BLEU-4: `0.2090`, CheXbert F1: `0.3349`), and FAISS Similarity RAG (BLEU-4: `0.2477`, CheXbert F1: `0.4017`).
-  - Quantitative copy-vs-grounding analysis completed: Mean Copy Word Overlap = 64.34%, Mean Grounding ROUGE-L = 0.3323.
-  - Deliverable artifacts generated: `results/phase3_metrics.json`, `results/phase3_metrics_table.md`, `results/phase3_sample_predictions.csv`, `results/phase3_copy_similarity.json`, `results/phase3_retrieval_logs.json`, `figures/phase3_comparative_metrics.png`, `figures/phase3_copy_vs_grounding.png`, `figures/phase3_retrieval_similarity_dist.png`, and `docs/PHASE3_RAG_REPORT.md`.
+  - 3-Way Controlled Framework benchmarked: Baseline (BLEU-4: `0.3606`, CheXbert F1: `0.4810`), Random Control (BLEU-4: `0.2090`, CheXbert F1: `0.3349`), and FAISS Similarity RAG ($K=2$, BLEU-4: `0.2477`, CheXbert F1: `0.4017`).
+  - Top-K Retrieval Depth Ablation completed: $K=1$ (BLEU-4: `0.2065`, Copy Overlap: **86.68%**), $K=2$ (BLEU-4: **`0.2882`**, Copy Overlap: **63.87%**), $K=3$ (BLEU-4: `0.2012`, Copy Overlap: **49.72%**).
+  - Research Validation Finding: Semantic retrieval is significantly more useful than random context (+0.0387 BLEU-4 over control), but on this synthetic validation dataset raw RAG does not outperform the un-augmented baseline model due to distractor noise and retrieval copy reliance (63.87% word overlap). This directly motivates Phase 4 (Structured Label Guidance).
+  - Deliverable artifacts generated: `results/phase3_metrics.json`, `results/phase3_metrics_table.md`, `results/phase3_topk_ablation.json`, `results/phase3_sample_predictions.csv`, `results/phase3_copy_similarity.json`, `results/phase3_retrieval_logs.json`, `figures/phase3_comparative_metrics.png`, `figures/phase3_copy_vs_grounding.png`, `figures/phase3_retrieval_similarity_dist.png`, `figures/phase3_topk_ablation.png`, and `docs/PHASE3_RAG_REPORT.md`.
 
 ---
 

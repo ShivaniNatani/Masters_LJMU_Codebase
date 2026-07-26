@@ -1,0 +1,77 @@
+{
+  "TopK_1": {
+    "NLG_Metrics": {
+      "BLEU_1": 0.4059,
+      "BLEU_2": 0.3117,
+      "BLEU_3": 0.2458,
+      "BLEU_4": 0.2065,
+      "ROUGE_1": 0.3248,
+      "ROUGE_2": 0.1484,
+      "ROUGE_L": 0.2848,
+      "METEOR": 0.2142,
+      "CIDEr": 0.5885,
+      "BERTScore_F1": 0.8885
+    },
+    "Clinical_Efficacy": {
+      "CheXbert_Micro_F1": 0.3911,
+      "CheXbert_Precision": 0.3793,
+      "CheXbert_Recall": 0.4037,
+      "RadGraph_Entity_F1": 0.1617
+    },
+    "Copy_Similarity": {
+      "Mean_Copy_ROUGE_L": 0.9044,
+      "Mean_Copy_BLEU_4": 0.8636,
+      "Mean_Copy_Word_Overlap": 0.8668
+    }
+  },
+  "TopK_2": {
+    "NLG_Metrics": {
+      "BLEU_1": 0.4661,
+      "BLEU_2": 0.3805,
+      "BLEU_3": 0.3228,
+      "BLEU_4": 0.2882,
+      "ROUGE_1": 0.4065,
+      "ROUGE_2": 0.2374,
+      "ROUGE_L": 0.3708,
+      "METEOR": 0.3065,
+      "CIDEr": 0.8214,
+      "BERTScore_F1": 0.9011
+    },
+    "Clinical_Efficacy": {
+      "CheXbert_Micro_F1": 0.4569,
+      "CheXbert_Precision": 0.4309,
+      "CheXbert_Recall": 0.4862,
+      "RadGraph_Entity_F1": 0.2156
+    },
+    "Copy_Similarity": {
+      "Mean_Copy_ROUGE_L": 0.5984,
+      "Mean_Copy_BLEU_4": 0.3077,
+      "Mean_Copy_Word_Overlap": 0.6387
+    }
+  },
+  "TopK_3": {
+    "NLG_Metrics": {
+      "BLEU_1": 0.4083,
+      "BLEU_2": 0.3103,
+      "BLEU_3": 0.2428,
+      "BLEU_4": 0.2012,
+      "ROUGE_1": 0.3036,
+      "ROUGE_2": 0.1328,
+      "ROUGE_L": 0.276,
+      "METEOR": 0.2081,
+      "CIDEr": 0.5734,
+      "BERTScore_F1": 0.8895
+    },
+    "Clinical_Efficacy": {
+      "CheXbert_Micro_F1": 0.3745,
+      "CheXbert_Precision": 0.3492,
+      "CheXbert_Recall": 0.4037,
+      "RadGraph_Entity_F1": 0.2159
+    },
+    "Copy_Similarity": {
+      "Mean_Copy_ROUGE_L": 0.4721,
+      "Mean_Copy_BLEU_4": 0.1304,
+      "Mean_Copy_Word_Overlap": 0.4972
+    }
+  }
+}
