@@ -1,0 +1,71 @@
+{
+  "Baseline_VLM": {
+    "BLEU_1": 0.4626,
+    "BLEU_2": 0.3784,
+    "BLEU_3": 0.3212,
+    "BLEU_4": 0.2855,
+    "ROUGE_1": 0.3875,
+    "ROUGE_2": 0.2346,
+    "ROUGE_L": 0.3586,
+    "METEOR": 0.2918,
+    "CIDEr": 0.8137,
+    "BERTScore_F1": 0.9018,
+    "CheXbert_Micro_F1": 0.4378,
+    "CheXbert_Precision": 0.4113,
+    "CheXbert_Recall": 0.4679,
+    "RadGraph_Entity_F1": 0.244
+  },
+  "FAISS_RAG_VLM": {
+    "BLEU_1": 0.4309,
+    "BLEU_2": 0.3386,
+    "BLEU_3": 0.2735,
+    "BLEU_4": 0.2345,
+    "ROUGE_1": 0.3528,
+    "ROUGE_2": 0.1748,
+    "ROUGE_L": 0.3148,
+    "METEOR": 0.246,
+    "CIDEr": 0.6683,
+    "BERTScore_F1": 0.894,
+    "CheXbert_Micro_F1": 0.4261,
+    "CheXbert_Precision": 0.405,
+    "CheXbert_Recall": 0.4495,
+    "RadGraph_Entity_F1": 0.2071
+  },
+  "SLG_Only_VLM": {
+    "BLEU_1": 0.431,
+    "BLEU_2": 0.3445,
+    "BLEU_3": 0.2913,
+    "BLEU_4": 0.2585,
+    "ROUGE_1": 0.3552,
+    "ROUGE_2": 0.1953,
+    "ROUGE_L": 0.3261,
+    "METEOR": 0.264,
+    "CIDEr": 0.7367,
+    "BERTScore_F1": 0.897,
+    "CheXbert_Micro_F1": 0.3966,
+    "CheXbert_Precision": 0.3672,
+    "CheXbert_Recall": 0.4312,
+    "RadGraph_Entity_F1": 0.1562
+  },
+  "Combined_SLG_RAG_VLM": {
+    "BLEU_1": 0.4104,
+    "BLEU_2": 0.3151,
+    "BLEU_3": 0.2469,
+    "BLEU_4": 0.2067,
+    "ROUGE_1": 0.3449,
+    "ROUGE_2": 0.1563,
+    "ROUGE_L": 0.3088,
+    "METEOR": 0.2337,
+    "CIDEr": 0.5891,
+    "BERTScore_F1": 0.8924,
+    "CheXbert_Micro_F1": 0.4034,
+    "CheXbert_Precision": 0.379,
+    "CheXbert_Recall": 0.4312,
+    "RadGraph_Entity_F1": 0.1662
+  },
+  "Copy_Similarity_Analysis": {
+    "Mean_Copy_ROUGE_L": 0.6047,
+    "Mean_Copy_BLEU_4": 0.2996,
+    "Mean_Copy_Word_Overlap": 0.6403
+  }
+}

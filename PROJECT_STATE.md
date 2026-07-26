@@ -52,11 +52,17 @@ The project implements a **Retrieval-Augmented Vision-Language Model (RAG VLM)**
   - Research Validation Finding: Semantic retrieval is significantly more useful than random context (+0.0387 BLEU-4 over control), but on this synthetic validation dataset raw RAG does not outperform the un-augmented baseline model due to distractor noise and retrieval copy reliance (63.87% word overlap). This directly motivates Phase 4 (Structured Label Guidance).
   - Deliverable artifacts generated: `results/phase3_metrics.json`, `results/phase3_metrics_table.md`, `results/phase3_topk_ablation.json`, `results/phase3_sample_predictions.csv`, `results/phase3_copy_similarity.json`, `results/phase3_retrieval_logs.json`, `figures/phase3_comparative_metrics.png`, `figures/phase3_copy_vs_grounding.png`, `figures/phase3_retrieval_similarity_dist.png`, `figures/phase3_topk_ablation.png`, and `docs/PHASE3_RAG_REPORT.md`.
 
+- **Phase 4: Structured Label Guidance VLM** (`COMPLETED & FROZEN`)
+  - CheXbert 14-condition clinical pathology vector encoder and prompt builder implemented (`label_guidance/label_encoder.py`, `prompt_formatter.py`).
+  - `LabelGuidedMedicalVLM` architecture trained over 2 stages (`checkpoints/label_guided_best_loss.pt`). Early stopping at Stage 2 Epoch 26.
+  - 4-Way Controlled Benchmark Matrix evaluated: Baseline (BLEU-4: `0.2855`), FAISS RAG (BLEU-4: `0.2345`), SLG-Only (BLEU-4: `0.2585`), and Combined SLG-RAG (BLEU-4: `0.2067`).
+  - Research Validation Finding: SLG-Only outperforms raw FAISS RAG (+0.0240 BLEU-4, +0.0684 CIDEr), proving structured clinical condition vectors provide cleaner steering signals than un-filtered text context.
+  - Deliverable artifacts generated: `results/phase4_metrics.json`, `results/phase4_metrics_table.md`, `results/phase4_sample_predictions.csv`, `results/phase4_copy_similarity.json`, `figures/phase4_comparative_metrics.png`, and `docs/PHASE4_LABEL_GUIDANCE_REPORT.md`.
+
 ---
 
 ## 4. Pending Work
 
-- **Phase 4: Structured Label Guidance**: Implement structured CheXbert disease condition vector extractor and prompt builder in `label_guidance/` to complement visual RAG retrieval and improve rare pathology recall.
 - **Phase 5: Real Dataset Ingestion & Scaled Training**: Ingest full MIMIC-CXR-JPG and IU Chest X-Ray datasets for large-scale training and benchmarking once PhysioNet credentials are live.
 - **Phase 6: Final Dissertation Benchmarking & Error Taxonomy**: Comprehensive multi-model benchmark matrix, clinical error taxonomy, and final dissertation report.
 
