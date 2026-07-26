@@ -1,0 +1,63 @@
+# Dataset Configurations for Multi-Modal Medical Report Generation
+
+primary_dataset:
+  name: "mimic_cxr_jpg"
+  version: "2.0.0"
+  physionet_url: "https://physionet.org/content/mimic-cxr-jpg/2.0.0/"
+  raw_dir: "data/raw/mimic_cxr"
+  processed_dir: "data/processed/mimic_cxr"
+  splits_file: "data/processed/mimic_cxr/mimic_cxr_splits.csv"
+  metadata_file: "data/processed/mimic_cxr/mimic_cxr_metadata.csv"
+  reports_dir: "data/raw/mimic_cxr/files"
+  image_size: [224, 224]
+  channels: 3
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+  split_ratios:
+    train: 0.70
+    val: 0.10
+    test: 0.20
+  seed: 42
+
+secondary_dataset:
+  name: "iu_chest_xray"
+  version: "1.0.0"
+  openi_url: "https://openi.nlm.nih.gov/"
+  raw_dir: "data/raw/iu_chest_xray"
+  processed_dir: "data/processed/iu_chest_xray"
+  splits_file: "data/processed/iu_chest_xray/iu_cxr_splits.csv"
+  metadata_file: "data/processed/iu_chest_xray/iu_cxr_metadata.csv"
+  reports_dir: "data/raw/iu_chest_xray/ecgen-radiology"
+  images_dir: "data/raw/iu_chest_xray/images"
+  image_size: [224, 224]
+  channels: 3
+  normalize_mean: [0.485, 0.456, 0.406]
+  normalize_std: [0.229, 0.224, 0.225]
+  split_ratios:
+    train: 0.70
+    val: 0.10
+    test: 0.20
+  seed: 42
+
+mock_dataset:
+  enabled: true
+  num_patients: 100
+  num_studies: 150
+  num_images: 200
+  mock_dir: "data/mock"
+  mock_csv: "data/mock/mimic_cxr_mock.csv"
+  mock_images_dir: "data/mock/images"
+
+text_processing:
+  max_sequence_length: 256
+  min_word_freq: 3
+  special_tokens:
+    pad_token: "<pad>"
+    unk_token: "<unk>"
+    bos_token: "<bos>"
+    eos_token: "<eos>"
+  section_headers:
+    - "FINDINGS"
+    - "IMPRESSION"
+    - "INDICATION"
+    - "COMPARISON"

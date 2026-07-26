@@ -1,0 +1,46 @@
+# Evaluation Metrics & Benchmarking Configuration
+
+natural_language_generation_metrics:
+  bleu:
+    enabled: true
+    weights:
+      bleu_1: [1.0, 0.0, 0.0, 0.0]
+      bleu_2: [0.5, 0.5, 0.0, 0.0]
+      bleu_3: [0.33, 0.33, 0.33, 0.0]
+      bleu_4: [0.25, 0.25, 0.25, 0.25]
+  rouge:
+    enabled: true
+    types: ["rouge1", "rouge2", "rougeL"]
+  meteor:
+    enabled: true
+  cider:
+    enabled: true
+
+clinical_efficacy_metrics:
+  chexbert:
+    enabled: true
+    model_checkpoint: "stanford/chexbert"
+    conditions:
+      - "Enlarged Cardiomediastinum"
+      - "Cardiomegaly"
+      - "Lung Opacity"
+      - "Lung Lesion"
+      - "Edema"
+      - "Consolidation"
+      - "Pneumonia"
+      - "Atelectasis"
+      - "Pneumothorax"
+      - "Pleural Effusion"
+      - "Pleural Other"
+      - "Fracture"
+      - "Support Devices"
+      - "No Finding"
+  f1_micro: true
+  f1_macro: true
+  precision: true
+  recall: true
+
+output:
+  results_dir: "results/"
+  predictions_file: "results/generated_reports.csv"
+  metrics_file: "results/evaluation_metrics.json"

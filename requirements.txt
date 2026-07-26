@@ -1,0 +1,54 @@
+# Multi-Modal Medical Report Generation Environment Requirements
+#
+# Regenerated 2026-07-26 from the project's actual .venv (`pip freeze`) so that
+# this file matches the environment the Phase 1 smoke test / EDA pipeline was
+# last verified against (see results/verification_report.json, logs/execution.log).
+# Re-verify against your target training host before a GPU run — a dev venv is
+# not guaranteed to match a remote training machine's CUDA/driver stack.
+#
+# PyTorch and Torchvision
+torch==2.13.0
+torchvision==0.28.0
+
+# Hugging Face Transformers & Tokenizers
+transformers==5.14.1
+tokenizers==0.22.2
+huggingface-hub==1.24.0
+safetensors==0.8.0
+
+# Vector Retrieval & Search
+faiss-cpu==1.14.3
+
+# Computer Vision & Image Processing
+opencv-python==5.0.0.93
+pillow==12.3.0
+# NOTE: albumentations is referenced for future augmentation work but is not
+# importable anywhere in the current codebase and is not present in the dev
+# .venv this file was regenerated from. Verify/install explicitly before use.
+albumentations>=1.3.1
+
+# Data Manipulation & Numerical Computation
+pandas==2.3.3
+numpy==2.5.1
+scipy==1.18.0
+scikit-learn==1.9.0
+
+# Experiment Tracking & Logging
+# (previously listed twice as both "weights-and-biases" and "wandb" - the
+# import name is `wandb`; "weights-and-biases" was a redundant duplicate entry)
+wandb==0.28.1
+mlflow==3.14.0
+
+# Visualization & Reporting
+matplotlib==3.11.1
+seaborn==0.13.2
+
+# Configuration & Utilities
+pyyaml==6.0.3
+tqdm==4.69.1
+requests==2.34.2
+pydantic==2.13.4
+python-dotenv==1.2.2
+
+# Testing
+pytest==9.1.1

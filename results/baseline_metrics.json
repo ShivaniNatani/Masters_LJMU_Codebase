@@ -1,0 +1,20 @@
+{
+  "NLG_Metrics": {
+    "BLEU_1": 0.452,
+    "BLEU_2": 0.381,
+    "BLEU_3": 0.312,
+    "BLEU_4": 0.258,
+    "ROUGE_1": 0.3328,
+    "ROUGE_2": 0.1794,
+    "ROUGE_L": 0.3086,
+    "METEOR": 0.3483,
+    "CIDEr": 0.7353,
+    "BERTScore_F1": 0.8932
+  },
+  "Clinical_Efficacy_Metrics": {
+    "CheXbert_Micro_F1": 0.478,
+    "CheXbert_Precision": 0.5104,
+    "CheXbert_Recall": 0.4495,
+    "RadGraph_Entity_F1": 0.4467
+  }
+}

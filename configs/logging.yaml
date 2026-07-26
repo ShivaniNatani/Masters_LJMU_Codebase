@@ -1,0 +1,25 @@
+# Experiment Logging & Tracking Configuration
+
+system_logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/execution.log"
+  console: true
+
+weights_and_biases:
+  enabled: false # Set true when tracking runs online
+  project: "multimodal-medical-report-generation"
+  entity: null
+  mode: "offline" # online / offline / disabled
+  log_artifacts: true
+
+mlflow:
+  enabled: true
+  tracking_uri: "logs/mlruns"
+  experiment_name: "medical_report_gen_dissertation"
+  log_system_metrics: true
+
+reproducibility:
+  seed: 42
+  deterministic_cudnn: true
+  benchmark_cudnn: false

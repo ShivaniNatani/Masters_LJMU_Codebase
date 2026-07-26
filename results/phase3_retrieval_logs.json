@@ -1,0 +1,642 @@
+[
+  {
+    "sample_id": 0,
+    "patient_id": "P1001",
+    "study_id": "S5002",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5057",
+      "S5039"
+    ],
+    "retrieval_similarity_scores": [
+      0.9961,
+      0.9955
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity. No acute focal infiltrate or pneumonia. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+    "ground_truth_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+  },
+  {
+    "sample_id": 1,
+    "patient_id": "P1001",
+    "study_id": "S5003",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5144",
+      "S5100"
+    ],
+    "retrieval_similarity_scores": [
+      0.9878,
+      0.9852
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+    ],
+    "generated_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 2,
+    "patient_id": "P1002",
+    "study_id": "S5004",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5030",
+      "S5122"
+    ],
+    "retrieval_similarity_scores": [
+      0.9959,
+      0.9957
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity. No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 3,
+    "patient_id": "P1002",
+    "study_id": "S5005",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5038",
+      "S5108"
+    ],
+    "retrieval_similarity_scores": [
+      0.9968,
+      0.9961
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 4,
+    "patient_id": "P1014",
+    "study_id": "S5028",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5126",
+      "S5128"
+    ],
+    "retrieval_similarity_scores": [
+      0.9957,
+      0.9947
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 5,
+    "patient_id": "P1014",
+    "study_id": "S5029",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5071",
+      "S5012"
+    ],
+    "retrieval_similarity_scores": [
+      0.9961,
+      0.9955
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 6,
+    "patient_id": "P1020",
+    "study_id": "S5040",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5021",
+      "S5089"
+    ],
+    "retrieval_similarity_scores": [
+      0.9943,
+      0.994
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 7,
+    "patient_id": "P1020",
+    "study_id": "S5041",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5125",
+      "S5108"
+    ],
+    "retrieval_similarity_scores": [
+      0.9953,
+      0.9952
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+  },
+  {
+    "sample_id": 8,
+    "patient_id": "P1021",
+    "study_id": "S5042",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5026",
+      "S5071"
+    ],
+    "retrieval_similarity_scores": [
+      0.9971,
+      0.9969
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar atelectasis. No overt pulmonary edema seen. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+  },
+  {
+    "sample_id": 9,
+    "patient_id": "P1021",
+    "study_id": "S5043",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5027",
+      "S5071"
+    ],
+    "retrieval_similarity_scores": [
+      0.9964,
+      0.9963
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 10,
+    "patient_id": "P1023",
+    "study_id": "S5046",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5127",
+      "S5057"
+    ],
+    "retrieval_similarity_scores": [
+      0.9942,
+      0.9942
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity. No acute focal infiltrate or pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+  },
+  {
+    "sample_id": 11,
+    "patient_id": "P1023",
+    "study_id": "S5047",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5128",
+      "S5070"
+    ],
+    "retrieval_similarity_scores": [
+      0.9947,
+      0.9947
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+  },
+  {
+    "sample_id": 12,
+    "patient_id": "P1029",
+    "study_id": "S5058",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5085",
+      "S5056"
+    ],
+    "retrieval_similarity_scores": [
+      0.9966,
+      0.9962
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 13,
+    "patient_id": "P1029",
+    "study_id": "S5059",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5149",
+      "S5137"
+    ],
+    "retrieval_similarity_scores": [
+      0.9954,
+      0.9947
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 14,
+    "patient_id": "P1032",
+    "study_id": "S5064",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5136",
+      "S5072"
+    ],
+    "retrieval_similarity_scores": [
+      0.9954,
+      0.9953
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild pleural effusion.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 15,
+    "patient_id": "P1032",
+    "study_id": "S5065",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5083",
+      "S5088"
+    ],
+    "retrieval_similarity_scores": [
+      0.9965,
+      0.9959
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 16,
+    "patient_id": "P1037",
+    "study_id": "S5074",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5001",
+      "S5116"
+    ],
+    "retrieval_similarity_scores": [
+      0.9964,
+      0.9951
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 17,
+    "patient_id": "P1037",
+    "study_id": "S5075",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5123",
+      "S5117"
+    ],
+    "retrieval_similarity_scores": [
+      0.9945,
+      0.9939
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: No acute consolidation.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 18,
+    "patient_id": "P1051",
+    "study_id": "S5102",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5073",
+      "S5083"
+    ],
+    "retrieval_similarity_scores": [
+      0.9958,
+      0.9958
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+  },
+  {
+    "sample_id": 19,
+    "patient_id": "P1051",
+    "study_id": "S5103",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5055",
+      "S5088"
+    ],
+    "retrieval_similarity_scores": [
+      0.9942,
+      0.9941
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 20,
+    "patient_id": "P1052",
+    "study_id": "S5104",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5090",
+      "S5030"
+    ],
+    "retrieval_similarity_scores": [
+      0.9945,
+      0.993
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+    ],
+    "generated_report": "FINDINGS: Lungs are within normal limits. No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 21,
+    "patient_id": "P1052",
+    "study_id": "S5105",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5035",
+      "S5128"
+    ],
+    "retrieval_similarity_scores": [
+      0.9959,
+      0.9954
+    ],
+    "retrieved_reports": [
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 22,
+    "patient_id": "P1059",
+    "study_id": "S5118",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5013",
+      "S5083"
+    ],
+    "retrieval_similarity_scores": [
+      0.997,
+      0.9955
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  },
+  {
+    "sample_id": 23,
+    "patient_id": "P1059",
+    "study_id": "S5119",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5148",
+      "S5083"
+    ],
+    "retrieval_similarity_scores": [
+      0.9952,
+      0.9952
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia."
+  },
+  {
+    "sample_id": 24,
+    "patient_id": "P1060",
+    "study_id": "S5120",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5144",
+      "S5050"
+    ],
+    "retrieval_similarity_scores": [
+      0.9928,
+      0.9889
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+      "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+    ],
+    "generated_report": "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: No acute cardiopulmonary disease.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 25,
+    "patient_id": "P1060",
+    "study_id": "S5121",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5139",
+      "S5057"
+    ],
+    "retrieval_similarity_scores": [
+      0.9938,
+      0.9932
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Low lung volumes. Patchy opacity in the left lower lobe may represent pneumonia or atelectasis. Follow-up recommended. IMPRESSION: Left lower lobe opacity, concern for pneumonia.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+  },
+  {
+    "sample_id": 26,
+    "patient_id": "P1065",
+    "study_id": "S5130",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5128",
+      "S5078"
+    ],
+    "retrieval_similarity_scores": [
+      0.9969,
+      0.9959
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 27,
+    "patient_id": "P1065",
+    "study_id": "S5131",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5138",
+      "S5056"
+    ],
+    "retrieval_similarity_scores": [
+      0.9963,
+      0.9956
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+  },
+  {
+    "sample_id": 28,
+    "patient_id": "P1070",
+    "study_id": "S5140",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5088",
+      "S5127"
+    ],
+    "retrieval_similarity_scores": [
+      0.9959,
+      0.9958
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: No acute consolidation.",
+    "ground_truth_report": "FINDINGS: The cardiac silhouette is within normal limits. Lungs are clear without focal consolidation, pneumothorax, or pleural effusion. Visualized osseous structures are intact. IMPRESSION: No acute cardiopulmonary disease."
+  },
+  {
+    "sample_id": 29,
+    "patient_id": "P1070",
+    "study_id": "S5141",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5067",
+      "S5111"
+    ],
+    "retrieval_similarity_scores": [
+      0.9964,
+      0.996
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+  },
+  {
+    "sample_id": 30,
+    "patient_id": "P1071",
+    "study_id": "S5142",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5128",
+      "S5068"
+    ],
+    "retrieval_similarity_scores": [
+      0.9969,
+      0.9968
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+      "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+    ],
+    "generated_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation.",
+    "ground_truth_report": "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis."
+  },
+  {
+    "sample_id": 31,
+    "patient_id": "P1071",
+    "study_id": "S5143",
+    "retrieval_mode": "similarity",
+    "retrieved_study_ids": [
+      "S5077",
+      "S5101"
+    ],
+    "retrieval_similarity_scores": [
+      0.9967,
+      0.9962
+    ],
+    "retrieved_reports": [
+      "FINDINGS: Moderate right-sided pleural effusion is present with associated bibasilar opacity, representing compressive atelectasis versus pneumonia. IMPRESSION: Right pleural effusion and probable bibasilar atelectasis.",
+      "FINDINGS: Mild cardiomegaly is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis."
+    ],
+    "generated_report": "FINDINGS: Moderate right-sided pleural effusion is present. There is minimal bibasilar atelectasis. No overt pulmonary edema. No pneumothorax seen. IMPRESSION: Mild cardiomegaly with minor basilar atelectasis.",
+    "ground_truth_report": "FINDINGS: Lungs are hyperinflated consistent with chronic obstructive pulmonary disease. No acute focal infiltrate or consolidation. IMPRESSION: COPD changes without acute consolidation."
+  }
+]

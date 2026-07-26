@@ -1,0 +1,40 @@
+{
+  "status": "PASSED",
+  "checks": {
+    "environment": {
+      "passed": true,
+      "device": "mps",
+      "backend": "MPS",
+      "gpu_name": "Apple Silicon MPS"
+    },
+    "dataset_load": {
+      "passed": true,
+      "num_records": 150
+    },
+    "image_load": {
+      "passed": true,
+      "shape": [
+        3,
+        224,
+        224
+      ]
+    },
+    "report_load": {
+      "passed": true,
+      "sample_text_snippet": "FINDINGS: The cardiac silhouette is within normal "
+    },
+    "dataloader": {
+      "passed": true,
+      "batch_size": 4
+    },
+    "forward_pass": {
+      "passed": true,
+      "logits_shape": [
+        4,
+        64,
+        1000
+      ],
+      "loss_val": 6.825880527496338
+    }
+  }
+}
