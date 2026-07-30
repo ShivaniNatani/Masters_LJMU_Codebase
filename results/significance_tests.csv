@@ -1,0 +1,31 @@
+dataset,metric,comparison,delta,ci_low,ci_high,p_value,significant,n
+MIMIC-CXR,BLEU-4,RAG vs Baseline,-0.0142,-0.016,-0.0124,0.0,True,2922
+MIMIC-CXR,BLEU-4,SLG vs Baseline,0.0024,0.0012,0.0035,0.0,True,2922
+MIMIC-CXR,BLEU-4,Combined vs Baseline,-0.0133,-0.015,-0.0115,0.0,True,2922
+MIMIC-CXR,BLEU-4,Combined vs SLG,-0.0156,-0.0175,-0.0138,0.0,True,2922
+MIMIC-CXR,BLEU-4,SLG vs RAG,0.0165,0.0147,0.0184,0.0,True,2922
+MIMIC-CXR,ROUGE-L,RAG vs Baseline,0.0158,0.0128,0.0186,0.0,True,2922
+MIMIC-CXR,ROUGE-L,SLG vs Baseline,0.005,0.0034,0.0065,0.0,True,2922
+MIMIC-CXR,ROUGE-L,Combined vs Baseline,0.0178,0.0148,0.0206,0.0,True,2922
+MIMIC-CXR,ROUGE-L,Combined vs SLG,0.0128,0.0099,0.0156,0.0,True,2922
+MIMIC-CXR,ROUGE-L,SLG vs RAG,-0.0108,-0.0137,-0.0079,0.0,True,2922
+MIMIC-CXR,CheXbert Micro-F1,RAG vs Baseline,0.0011,-0.0061,0.0086,0.756,False,2922
+MIMIC-CXR,CheXbert Micro-F1,SLG vs Baseline,0.0115,0.0058,0.0171,0.0002,True,2922
+MIMIC-CXR,CheXbert Micro-F1,Combined vs Baseline,0.0129,0.0061,0.0199,0.0,True,2922
+MIMIC-CXR,CheXbert Micro-F1,Combined vs SLG,0.0014,-0.0053,0.0081,0.6624,False,2922
+MIMIC-CXR,CheXbert Micro-F1,SLG vs RAG,0.0104,0.0034,0.0175,0.0034,True,2922
+IU Chest X-Ray,BLEU-4,RAG vs Baseline,0.003,-0.0057,0.0116,0.4954,False,1180
+IU Chest X-Ray,BLEU-4,SLG vs Baseline,0.0055,0.0011,0.0103,0.013,True,1180
+IU Chest X-Ray,BLEU-4,Combined vs Baseline,0.0022,-0.0064,0.0106,0.6184,False,1180
+IU Chest X-Ray,BLEU-4,Combined vs SLG,-0.0033,-0.0125,0.0057,0.4778,False,1180
+IU Chest X-Ray,BLEU-4,SLG vs RAG,0.0025,-0.007,0.0121,0.6118,False,1180
+IU Chest X-Ray,ROUGE-L,RAG vs Baseline,0.0102,0.0024,0.0183,0.012,True,1180
+IU Chest X-Ray,ROUGE-L,SLG vs Baseline,0.0046,0.0011,0.0085,0.0106,True,1180
+IU Chest X-Ray,ROUGE-L,Combined vs Baseline,0.0105,0.0028,0.0183,0.007,True,1180
+IU Chest X-Ray,ROUGE-L,Combined vs SLG,0.0059,-0.0025,0.0143,0.166,False,1180
+IU Chest X-Ray,ROUGE-L,SLG vs RAG,-0.0056,-0.0145,0.0029,0.1992,False,1180
+IU Chest X-Ray,CheXbert Micro-F1,RAG vs Baseline,0.0079,-0.011,0.0267,0.4146,False,1180
+IU Chest X-Ray,CheXbert Micro-F1,SLG vs Baseline,0.0157,0.0066,0.025,0.0014,True,1180
+IU Chest X-Ray,CheXbert Micro-F1,Combined vs Baseline,0.009,-0.0099,0.0275,0.3456,False,1180
+IU Chest X-Ray,CheXbert Micro-F1,Combined vs SLG,-0.0067,-0.0256,0.0128,0.4946,False,1180
+IU Chest X-Ray,CheXbert Micro-F1,SLG vs RAG,0.0078,-0.0116,0.0271,0.4366,False,1180

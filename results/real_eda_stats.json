@@ -1,0 +1,24 @@
+{
+  "MIMIC-CXR": {
+    "n": 15000,
+    "patients": 2699,
+    "len_mean": 56.2,
+    "len_median": 50,
+    "len_p5": 6,
+    "len_p95": 121,
+    "studies_per_patient_mean": 3.34,
+    "studies_per_patient_max": 66,
+    "pct_no_finding": 60.3
+  },
+  "IU Chest X-Ray": {
+    "n": 5910,
+    "patients": 2955,
+    "len_mean": 31.1,
+    "len_median": 29,
+    "len_p5": 14,
+    "len_p95": 58,
+    "studies_per_patient_mean": 1.0,
+    "studies_per_patient_max": 1,
+    "pct_no_finding": 92.0
+  }
+}

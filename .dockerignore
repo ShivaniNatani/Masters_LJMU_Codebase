@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.gitignore
+.ds_store
+.DS_Store
+data/
+checkpoints/
+logs/
+results/
+retrieval/index_store/
+mlruns/
+.pytest_cache/

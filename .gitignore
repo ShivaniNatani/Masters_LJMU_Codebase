@@ -1,4 +1,6 @@
+# ---------------------------------------------------------------
 # Python
+# ---------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
@@ -19,28 +21,78 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
 
-# Virtual Environment
+# ---------------------------------------------------------------
+# Virtual environments
+# ---------------------------------------------------------------
 .venv/
 env/
 venv/
 ENV/
 
-# Data & Models (Raw datasets and heavy checkpoints ignored from git tracking)
+# ---------------------------------------------------------------
+# Datasets  (public; download instructions in docs/DATASET_GUIDE.md)
+# ---------------------------------------------------------------
 data/raw/
 data/processed/
-checkpoints/*.pt
-checkpoints/*.pth
-checkpoints/*.bin
-logs/*.log
-logs/*.pb
+# data/mock/images/ is intentionally tracked: it lets the pipeline be run
+# end-to-end without PhysioNet credentials (see scripts/smoke_test.py)
 
-# IDE & OS
+
+# ---------------------------------------------------------------
+# Model weights  (~15 GB; regenerate with scripts/train_*.py)
+# NOTE: the trailing /** is required - "checkpoints/*.pt" does not
+# match files inside checkpoints/mimic_real/ or checkpoints/iu_real/
+# ---------------------------------------------------------------
+checkpoints/
+**/*.pt
+**/*.pth
+**/*.bin
+**/*.ckpt
+**/*.safetensors
+
+# ---------------------------------------------------------------
+# FAISS indices  (~30 GB combined; rebuild with scripts/build_faiss_index_*.py)
+# ---------------------------------------------------------------
+retrieval/index_store/*.index
+retrieval/index_store/*_metadata.json
+
+# ---------------------------------------------------------------
+# Large per-sample prediction dumps (regenerate with scripts/evaluate_*.py)
+# Summary metrics, significance tests and the error taxonomy ARE tracked.
+# ---------------------------------------------------------------
+results/*_sample_predictions.csv
+results/raw_chexbert_labels_*.json
+results/raw_radgraph_entities_*.json
+results/untrained_control/raw_*.json
+
+# ---------------------------------------------------------------
+# Logs and experiment tracking
+# ---------------------------------------------------------------
+logs/*.log
+logs/*.db
+logs/mlflow.db
+logs/*.pb
+mlruns/
+
+# ---------------------------------------------------------------
+# Dissertation deliverables (submitted separately to upGrad-LJMU)
+# ---------------------------------------------------------------
+SUBMISSION/
+FINAL_SUBMISSION/
+Shivani_Natani_Submission/
+Shivani_Natani_*.docx
+Shivani_Natani_*.pdf
+Shivani_Natani_*.pptx
+
+# ---------------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------------
 .DS_Store
 .vscode/
 .idea/
+.claude/
 *.swp
 *.swo
-
-# Jupyter
 .ipynb_checkpoints/

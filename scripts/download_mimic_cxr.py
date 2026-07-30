@@ -46,14 +46,16 @@ def download_mimic_cxr(
         with os.fdopen(netrc_fd, "w") as f:
             f.write(f"machine {host}\nlogin {username}\npassword {password}\n")
 
+        env = os.environ.copy()
+        env["NETRC"] = netrc_path
+
         cmd = [
             "wget",
             "-r",
             "-N",
             "-c",
             "-np",
-            "--netrc-file",
-            netrc_path,
+            "--netrc",
             "-P",
             output_dir,
             PHYSIONET_URL,
@@ -61,7 +63,7 @@ def download_mimic_cxr(
 
         logger.info(f"Executing PhysioNet download command for user: {username}...")
         try:
-            subprocess.run(cmd, check=True)
+            subprocess.run(cmd, check=True, env=env)
             logger.info("MIMIC-CXR-JPG dataset download complete.")
         except Exception as e:
             logger.error(f"Download command failed or was interrupted: {e}")

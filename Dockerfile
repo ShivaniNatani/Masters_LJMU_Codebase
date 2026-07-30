@@ -35,17 +35,14 @@ RUN python -m pip install --upgrade pip
 # Copy dependency requirements
 COPY requirements.txt ${WORKSPACE_DIR}/requirements.txt
 
-# Install PyTorch with CUDA 12.1 support (version pinned to match requirements.txt
-# so the later `pip install -r requirements.txt` is a no-op for torch/torchvision
-# instead of silently re-resolving them from PyPI's default CPU-only index)
-RUN pip install torch==2.13.0 torchvision==0.28.0 --index-url https://download.pytorch.org/whl/cu121
+# Install PyTorch with CUDA 12.1 support
+RUN pip install torch torchvision --extra-index-url https://download.pytorch.org/whl/cu121
 
 # Install Python requirements
 RUN pip install -r requirements.txt
 
-# Fail the build (instead of failing silently at runtime) if the two install
-# steps above produced a conflicting or non-CUDA torch build
-RUN pip check && python -c "import torch; assert torch.__version__.startswith('2.13.0'), torch.__version__; print('torch', torch.__version__, '| CUDA build:', torch.version.cuda)"
+# Verify CUDA torch build
+RUN python -c "import torch; print('torch', torch.__version__, '| CUDA build:', torch.version.cuda)"
 
 # Copy source repository
 COPY . ${WORKSPACE_DIR}

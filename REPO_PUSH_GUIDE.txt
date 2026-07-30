@@ -1,0 +1,67 @@
+PUBLISHING THE SOURCE CODE REPOSITORY
+=====================================
+Shivani Natani · 1187203 · MSc AIML, LJMU
+
+The repository has been cleaned and is ready to publish. Excluded content can
+be regenerated from the scripts, so nothing needed to reproduce the work is lost.
+
+
+WHAT WILL BE PUBLISHED  (approximately 10 MB, 321 files)
+--------------------------------------------------------
+  code            preprocessing/  datasets/  models/  retrieval/  label_guidance/
+                  training/  evaluation/  utils/  scripts/  tests/
+  configuration   configs/*.yaml  requirements.txt  environment.yml  Dockerfile
+  documentation   docs/  README.md  PROJECT_STATE.md  CHANGELOG.md
+  results         summary metrics, significance tests, error taxonomy, EDA stats
+  figures         all 12 thesis figures
+  mock data       150 synthetic image-report pairs, so the pipeline can be run
+                  end to end without PhysioNet credentials
+
+
+WHAT IS EXCLUDED, AND HOW TO REGENERATE IT
+------------------------------------------
+  checkpoints/                    ~15 GB   scripts/train_mimic_real.py
+                                           scripts/train_iu_real.py
+  retrieval/index_store/*.index   ~30 MB   scripts/build_faiss_index_mimic.py
+                                           scripts/build_faiss_index_iu.py
+  data/raw/, data/processed/      ~1.1 GB  see docs/DATASET_GUIDE.md
+  results/*_sample_predictions.csv ~23 MB  scripts/evaluate_mimic_real.py
+                                           scripts/evaluate_iu_real.py
+  results/raw_chexbert_*.json      ~30 MB  produced by the same evaluation scripts
+  logs/, mlruns/                           regenerated on each run
+  dissertation PDFs and .docx              submitted separately to upGrad-LJMU
+
+  A defect was corrected in .gitignore during preparation: the previous pattern
+  "checkpoints/*.pt" did not match files inside checkpoints/mimic_real/ or
+  checkpoints/iu_real/, so roughly 15 GB of model weights would have been
+  committed. The pattern is now "checkpoints/" plus "**/*.pt".
+
+
+PUSHING
+-------
+  cd "path/to/Implementation"
+  git status                       # confirm no .pt or .index files are listed
+  git add -A
+  git commit -m "MSc dissertation: multi-modal radiology report generation"
+  git remote add origin https://github.com/<your-username>/<repo-name>.git
+  git branch -M main
+  git push -u origin main
+
+  Before pushing, run this to be certain nothing large slipped through:
+
+  git ls-files | xargs -I{} du -k "{}" 2>/dev/null | sort -rn | head -5
+
+
+AFTER PUSHING
+-------------
+  Make the repository public, or private with access granted to the markers.
+  Paste the URL into FINAL_SUBMISSION/6_Supporting_Links.pdf, Section 1.
+
+
+A NOTE ON WHAT THE REPOSITORY SHOWS
+-----------------------------------
+  The repository contains the evidence behind Chapter 5, including the archived
+  random-initialisation control in results/untrained_control/ and the root-cause
+  analysis in docs/DIAGNOSTIC_FINDINGS.md. This is deliberate. The thesis reports
+  four implementation defects, and a marker who inspects the code will find them
+  documented rather than concealed.

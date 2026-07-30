@@ -1,0 +1,9 @@
+dataset,condition,n,hallucinated_findings,hallucination_rate_per_report,omitted_findings,omission_rate_per_report,negation_errors,negation_rate_per_report,laterality_errors,laterality_rate_per_report,degenerate_reports,degenerate_pct,findings_asserted,findings_in_reference
+MIMIC-CXR,Baseline,2922,2785,0.953,5011,1.715,1164,0.398,3,0.001,5,0.17,6772,8998
+MIMIC-CXR,RAG,2922,1967,0.673,5355,1.833,638,0.218,0,0.0,0,0.0,5610,8998
+MIMIC-CXR,SLG,2922,2769,0.948,4819,1.649,1008,0.345,21,0.007,12,0.41,6948,8998
+MIMIC-CXR,Combined,2922,2059,0.705,5181,1.773,666,0.228,0,0.0,0,0.0,5876,8998
+IU Chest X-Ray,Baseline,1180,175,0.148,2258,1.914,7,0.006,0,0.0,0,0.0,571,2654
+IU Chest X-Ray,RAG,1180,125,0.106,2247,1.904,18,0.015,0,0.0,0,0.0,532,2654
+IU Chest X-Ray,SLG,1180,203,0.172,2186,1.853,11,0.009,0,0.0,0,0.0,671,2654
+IU Chest X-Ray,Combined,1180,127,0.108,2242,1.9,16,0.014,0,0.0,0,0.0,539,2654
